@@ -22,7 +22,6 @@ var config = {
 var pool = new Pool(config);
 
 app.get("/api/largebody", async (req, res) => {
-  console.log("HERE!");
   try {
     const templateContinent = "With "
     + "totals(continent, name, code, capital, population) "

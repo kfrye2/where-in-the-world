@@ -12,7 +12,7 @@ class Home extends React.Component {
 
   async handleUpdate(evt) {
     this.setState({ search: evt.target.value, display: false });
-    let data = null;
+    var data = null;
     const p = evt.target.value;
 
     data = await getInfo(p);
